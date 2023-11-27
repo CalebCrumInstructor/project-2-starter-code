@@ -2,9 +2,7 @@ const router = require('express').Router();
 
 router.get('/', async (req, res) => {
   try {
-
-
-    res.render('home', {
+    res.render('dashboard', {
       logged_in: true
     });
   } catch (err) {
