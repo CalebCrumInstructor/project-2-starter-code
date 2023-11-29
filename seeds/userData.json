@@ -1,17 +1,26 @@
 [
   {
-    "name": "Sal",
+    "first_name": "Marlie",
+    "last_name": "Ford",
     "email": "sal@hotmail.com",
     "password": "password12345"
   },
   {
-    "name": "Lernantino",
-    "email": "lernantino@gmail.com",
+    "first_name": "Dalton",
+    "last_name": "Russell",
+    "email": "daltonfussell1@gmail.com",
     "password": "password12345"
   },
   {
-    "name": "Amiko",
-    "email": "amiko2k20@aol.com",
+    "first_name": "Dakota",
+    "last_name": "Johnson",
+    "email": "josephdakotajohnson@gmail.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Julie",
+    "last_name": "Bowers",
+    "email": "haldirolorien@comcast.net",
     "password": "password12345"
   }
 ]
