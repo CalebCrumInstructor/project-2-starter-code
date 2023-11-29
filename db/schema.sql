@@ -1,3 +1,3 @@
 -- Change db name
-DROP DATABASE IF EXISTS project_2;
-CREATE DATABASE project_2;
+DROP DATABASE IF EXISTS eeriepapers_db;
+CREATE DATABASE eeriepapers_db;
