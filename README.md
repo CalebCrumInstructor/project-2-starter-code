@@ -1,1 +1,1 @@
-# project-2-starter-code
+With this website, a user can insert a caption & description of supernatural / paranormal stories, along with a location pin, tags to direct viewers to that specific type of post, relevant media, and comment on a post. There is another section of this site to post descriptions and discuss theories.
