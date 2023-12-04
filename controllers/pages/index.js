@@ -13,8 +13,22 @@ router.use('/dashboard', withAuth, dashboard);
 router.use('/login', login);
 
 router.get('/', (req, res) => {
+
+  // query db
+
+
   return res.render('welcome', {
-    logged_in: req.session.logged_in
+    logged_in: req.session.logged_in,
+    // certainPosts: {
+    //   mostRecentPost: "This is a title of a recent post",
+    //   mostUpVotedPost: "This is a title of an up-voted post"
+    // },
+    mostRecentPost: {
+      title: "This is a title of a recent post"
+    },
+    // mostUpVotedPost: {
+    //   title: "This is a title of an up-voted post"
+    // }
   });
 });
 
