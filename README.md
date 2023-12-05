@@ -1,4 +1,4 @@
-# project-2-starter-code
+With this website, a user can insert a caption & description of supernatural / paranormal stories, along with a location pin, tags to direct viewers to that specific type of post, relevant media, and comment on a post. There is another section of this site to post descriptions and discuss theories.
 ## Project Requirements
 
 You and your group will use everything you’ve learned over the past six modules to create a real-world full-stack application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
