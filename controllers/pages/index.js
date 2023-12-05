@@ -9,6 +9,7 @@ const forums = require('./forums-page');
 const theories = require('./theories-page');
 const Lore = require('../../models/Lore');
 
+
 router.use('/profile', withAuth, profile);
 
 router.use('/dashboard', withAuth, dashboard);
