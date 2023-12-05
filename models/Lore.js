@@ -43,16 +43,6 @@ Lore.init(
     },
 },
 {
-    // hooks: {
-    //     beforeCreate: async (newLoreData) => {
-    //     newLoreData.upvotes = 0;
-    //     return newUserData;
-    //     },
-    //     // beforeUpdate: async (updatedUserData) => {
-    //     // updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
-    //     // return updatedUserData;
-    //     // },
-    // },
     sequelize,
     timestamps: true,
     freezeTableName: true,
