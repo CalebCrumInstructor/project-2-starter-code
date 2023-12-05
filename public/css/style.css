@@ -167,6 +167,21 @@ body {
     position: relative;
 }
 
+.card-sizing {
+    margin: 0px 48px 38px 48px;
+    min-width: 350px;
+    height: 200px;
+}
+
+.card-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-relative {
+    position: relative;
+}
+
 @keyframes marquee {
     0% {
         transform: translate3d(0, 0, 0);
