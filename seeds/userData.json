@@ -1,23 +1,27 @@
 [
   {
+    "username": "M-Fo",
     "first_name": "Marlie",
     "last_name": "Ford",
     "email": "sal@hotmail.com",
     "password": "password12345"
   },
   {
+    "username": "D-Fu",
     "first_name": "Dalton",
-    "last_name": "Russell",
+    "last_name": "Fussell",
     "email": "daltonfussell1@gmail.com",
     "password": "password12345"
   },
   {
+    "username": "D-Jo",
     "first_name": "Dakota",
     "last_name": "Johnson",
     "email": "josephdakotajohnson@gmail.com",
     "password": "password12345"
   },
   {
+    "username": "J-Bo",
     "first_name": "Julie",
     "last_name": "Bowers",
     "email": "haldirolorien@comcast.net",
