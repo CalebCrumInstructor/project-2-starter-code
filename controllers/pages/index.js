@@ -5,12 +5,18 @@ const withAuth = require('../../middleware/auth');
 const profile = require('./profile-page');
 const dashboard = require('./dashboard-page');
 const login = require('./login-page');
+const forums = require('./forums-page');
+const theories = require('./theories-page');
 
 router.use('/profile', withAuth, profile);
 
 router.use('/dashboard', withAuth, dashboard);
 
 router.use('/login', login);
+
+router.use('/forums', forums);
+
+router.use('/theories', theories);
 
 router.get('/', (req, res) => {
 
