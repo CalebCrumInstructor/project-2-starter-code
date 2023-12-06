@@ -42,7 +42,7 @@ CREATE TABLE story (
 CREATE TABLE story_image (
     id              INT NOT NULL,
     story_id        INT NOT NULL,
-    attachment      VARCHAR(500),
+    attachment_url  VARCHAR(500),
     PRIMARY KEY(ID),
     FOREIGN KEY (story_id)
     REFERENCES story(id)

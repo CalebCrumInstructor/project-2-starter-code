@@ -19,22 +19,12 @@ Story_Image.init(
         type: DataTypes.INTEGER,
         allowNull: false,
     },
-    content: {
-        type: DataTypes.BLOB,
+    attachment_url: {
+        type: DataTypes.STRING,
         allowNull: true,
     },
 },
 {
-    // hooks: {
-    //     beforeCreate: async (newLoreData) => {
-    //     newLoreData.upvotes = 0;
-    //     return newUserData;
-    //     },
-    //     // beforeUpdate: async (updatedUserData) => {
-    //     // updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
-    //     // return updatedUserData;
-    //     // },
-    // },
     sequelize,
     timestamps: false,
     freezeTableName: true,
