@@ -31,7 +31,6 @@
               <nav>
                   <a class="has-text-weight-bold subtitle-color" href='/forums'>Forums</a>
                   <h7 class="has-text-weight-bold subtitle-color"> | </h7>
-
                 <!-- Conditionally render login or logout links -->
                 {{#if logged_in}}
                   <a class="has-text-weight-bold subtitle-color" href='/dashboard'>Dashboard</a>
@@ -63,6 +62,7 @@
     {{#if logged_in}}
       <script src='/js/logout.js'></script>
     {{/if}}
+    <script src="/assets/js/main.js"></script>
   </body>
 
 </html>
