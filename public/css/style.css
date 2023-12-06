@@ -86,13 +86,29 @@
     cursor: pointer;
 }
 
+.btn-style {
+    /* border: none; */
+    width: auto;
+    background: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56));
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    box-shadow: 3px 3px 3px rgb(88, 88, 88);
+    color: var(--primary-color);
+    display: inline-block;
+    line-height: 10px;
+    margin: 8px 8px 8px 10px;
+    padding: 5px 15px;
+    text-align: center;
+    cursor: alias;
+}
+
 .homepage-image {
-    height: 100vh;
+    min-height: 100vh;
     background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Eerie_Background1.png)!important;
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .display-image-1 {
@@ -101,16 +117,15 @@
     /* background-position: 50%; */
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .display-image-2 {
-    height: 100vh;
     background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Eerie_Background4_v4.png)!important;
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .card-image1 {
@@ -124,8 +139,15 @@
 }
 
 .card-image3 {
-    background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Watery_Backdrop2_v1.png)!important;
+    height: 100%;
+    /* width: 100%; */
+    background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Eerie_Background2_v2.png)!important;    background-repeat: no-repeat;
+    background-position: 50%;
+    /* background-repeat: no-repeat; */
+    /* background-image: contain; */
     background-size: cover;
+    /* background-size: auto; */
+    /* overflow: hidden; */
 }
 
 /* Fog Animation */
@@ -175,7 +197,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: 1;
 }
 

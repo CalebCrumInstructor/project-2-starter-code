@@ -7,6 +7,7 @@ const dashboard = require('./dashboard-page');
 const login = require('./login-page');
 const forums = require('./forums-page');
 const theories = require('./theories-page');
+const create = require('./create-page');
 const Lore = require('../../models/Lore');
 
 
@@ -19,6 +20,8 @@ router.use('/login', login);
 router.use('/forums', forums);
 
 router.use('/theories', theories);
+
+router.use('/create', withAuth, create);
 
 router.get('/', async (req, res) => {
 
