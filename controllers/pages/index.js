@@ -40,11 +40,13 @@ router.get('/', async (req, res) => {
     // },
     mostRecentPost: {
       title: mostRecentLore.title,
+      id: mostRecentLore.id
       //"This is a title of a recent post"
 
     },
     mostUpVotedPost: {
-      title: mostVotedLore.title
+      title: mostVotedLore.title,
+      id: mostVotedLore.id
       //"This is a title of an up-voted post"
     }
   });
