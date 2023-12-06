@@ -5,8 +5,8 @@
     --other-font-1: 'Unbounded', sans-serif;
     --other-font-2: 'Splash', cursive;
     --other-font-3: 'Space Mono', monospace;
-    --primary-color: rgb(0, 0, 0);
-    --secondary-color: rgb(255, 255, 255);
+    --primary-color: rgb(37, 37, 37);
+    --secondary-color: rgb(226, 226, 226);
 }
 
 .custom-font-pr {
@@ -62,16 +62,51 @@
 }
 
 .title-color {
-    color: rgb(37, 37, 37);
+    color: var(--primary-color);
 }
 
 .subtitle-color {
-    color: rgb(37, 37, 37);
+    color: var(--primary-color);
+}
+
+.button-style {
+    /* border: none; */
+    width: auto;
+    background: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56));
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px rgb(88, 88, 88);
+    color: var(--primary-color);
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 16px 16px 16px 20px;
+    padding: 7px 19px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .homepage-image {
     height: 100vh;
     background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Eerie_Background1.png)!important;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.display-image-1 {
+    /* height: 100vh; */
+    background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Eerie_Background3_v4.png)!important;
+    /* background-position: 50%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.display-image-2 {
+    height: 100vh;
+    background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Eerie_Background4_v4.png)!important;
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,6 +119,11 @@
 }
 
 .card-image2 {
+    background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Watery_Backdrop2_v1.png)!important;
+    background-size: cover;
+}
+
+.card-image3 {
     background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Watery_Backdrop2_v1.png)!important;
     background-size: cover;
 }
@@ -180,6 +220,25 @@ body {
 
 .card-relative {
     position: relative;
+}
+
+.text-styling-main {
+    font-family: var(--primary-font);
+    font-size: 24px;
+    color: rgb(207, 200, 200);
+    font-weight: bold;
+    text-align: center;
+    backdrop-filter: blur(2px);
+}
+
+.text-styling {
+    font-family: var(--flavor-font);
+    font-size: 36px;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-align: center;
+    padding:  47px 0px 47px 0px;
+    backdrop-filter: blur(2px);
 }
 
 @keyframes marquee {
