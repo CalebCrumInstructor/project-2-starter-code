@@ -43,7 +43,8 @@ app.get('/', (req, res) => {
 
 app.post('/api/photo', uploads.single('file'), async (req, res) => {
   console.log('Ahhhhhhhhhhhhh')
-  console.log(req.file)
+  console.log(req.file);
+  console.log(req.body);
   try {
     const cloudImgData = await cloudinary.uploader.upload('./uploads/' + req.file.filename, {
       upload_preset: 'My Preset Here'
