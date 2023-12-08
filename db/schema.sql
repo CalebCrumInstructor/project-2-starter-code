@@ -20,8 +20,8 @@ CREATE TABLE lore (
     content           BLOB,
     upvote            INT,
     source            VARCHAR(500),
-    created_at        DATETIME,
-    updated_at        DATETIME,
+    created_at        DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at        DATETIME DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id)
 );
 
@@ -31,8 +31,8 @@ CREATE TABLE story (
     content           BLOB,
     upvote            INT,
     user_id           INT,
-    created_at        DATETIME,
-    updated_at        DATETIME,
+    created_at        DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at        DATETIME DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id),
     FOREIGN KEY (user_id)
     REFERENCES user(id)
@@ -54,8 +54,8 @@ CREATE TABLE review (
     story_id            INT,
     user_id             INT,
     content             BLOB,
-    created_at          DATETIME,
-    updated_at          DATETIME,
+    created_at          DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at          DATETIME DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(ID),
     FOREIGN KEY (story_id)
     REFERENCES story(id)
