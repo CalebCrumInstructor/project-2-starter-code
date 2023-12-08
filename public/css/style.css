@@ -181,9 +181,11 @@ body {
     height: 100px;
     width: 95%;
     margin-left: 2.5%;
+    margin-top: 5%;
     background-color: rgba(50, 53, 54, 0.826);
     color: rgb(92, 97, 101);
     text-align: center;
+    border-radius: ;
 }
 
 /* .title-changes {
