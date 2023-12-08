@@ -1,7 +1,10 @@
     {{!-- <h3>Dashboard Page</h3> --}}
 <div class="column is-full is-flex is-justify-content-center">
-    {{!-- {{#each}} --}}
-
+    <ul class="">
+        {{#each stories}}
+            <li>{{this.title}}</li>
+        {{/each}}
+    </ul>
 
 </div>
 <div class="column is-full is-flex is-justify-content-center">
