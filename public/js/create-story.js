@@ -23,12 +23,26 @@ function uploadImg(story_id) {
 const handleSubmit = async (event) => {
     event.preventDefault();
 
+    const body = {
+        title: document.querySelector('#title').value,
+        content: document.querySelector('#story').value
+    };
+
     try {
         // hit route to create story
-        const storyData;
+        const storyData = await fetch('/api/encounters', {
+            method: 'POST',
+            body: JSON.stringify(body),
+            headers: { 'Content-Type': 'application/json' },
+
+        });
+
+        const story = await storyData.json();
+
+        console.log(story);
 
         // take story id and pass it to uploadImg
-        uploadImg(storyData.id);
+        uploadImg(story.id);
 
 
 
