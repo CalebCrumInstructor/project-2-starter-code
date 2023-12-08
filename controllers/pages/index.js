@@ -8,7 +8,10 @@ const login = require('./login-page');
 const forums = require('./forums-page');
 const theories = require('./theories-page');
 const create = require('./create-page');
+const lorePage = require('./lore-page');
 const Lore = require('../../models/Lore');
+const encounterPage = require('./encounter-page');
+const Encounter = require('../../models/Story');
 
 
 router.use('/profile', withAuth, profile);
@@ -22,18 +25,20 @@ router.use('/forums', forums);
 router.use('/theories', theories);
 
 router.use('/create', withAuth, create);
+router.use('/lore', lorePage);
+router.use('/encounter', encounterPage);
 
 router.get('/', async (req, res) => {
 
   // query db
-  const mostRecentLore = await Lore.findOne({
+  const mostRecentEncounter = await Encounter.findOne({
     order: [ [ 'createdAt', 'DESC' ]]
-});
-  const mostVotedLore = await Lore.findOne({
+  });
+  const mostVotedEncounter = await Encounter.findOne({
     order: [ ['upvote', 'DESC'],
             [ 'createdAt' ]
           ],
-});
+  });
 
   return res.render('welcome', {
     logged_in: req.session.logged_in,
@@ -42,14 +47,14 @@ router.get('/', async (req, res) => {
     //   mostUpVotedPost: "This is a title of an up-voted post"
     // },
     mostRecentPost: {
-      title: mostRecentLore.title,
-      id: mostRecentLore.id
+      title: mostRecentEncounter.title,
+      id: mostRecentEncounter.id
       //"This is a title of a recent post"
 
     },
     mostUpVotedPost: {
-      title: mostVotedLore.title,
-      id: mostVotedLore.id
+      title: mostVotedEncounter.title,
+      id: mostVotedEncounter.id
       //"This is a title of an up-voted post"
     }
   });
