@@ -166,6 +166,26 @@ body {
     z-index: 0;
 }
 
+.eerieExcerptsCard {
+    position: relative;
+    height: 90%;
+    width: 50%;
+    margin-left: 25%;
+    background-color: rgba(50, 53, 54, 0.826);
+    color: rgb(92, 97, 101);
+    text-align: center;
+}
+
+.divExcerpt {
+    position: relative;
+    height: 100px;
+    width: 95%;
+    margin-left: 2.5%;
+    background-color: rgba(50, 53, 54, 0.826);
+    color: rgb(92, 97, 101);
+    text-align: center;
+}
+
 /* .title-changes {
     position: absolute;
     top: 0;
