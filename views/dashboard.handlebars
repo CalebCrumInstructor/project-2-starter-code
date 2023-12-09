@@ -1,8 +1,10 @@
     {{!-- <h3>Dashboard Page</h3> --}}
-<div class="column is-full is-flex is-justify-content-center">
+<div class="column  is-full is-flex is-justify-content-center">
     <ul class="">
         {{#each stories}}
-            <li>{{this.title}}</li>
+            <div class="card card-sizing card-relative display-image-3">
+                <li class="px-5 pt-3 pb-1 text-styling">{{this.title}}</li> {{!-- card px-5 pt-3 pb-1 card-relative card-image4 text-styling --}}
+            </div>
         {{/each}}
     </ul>
 
