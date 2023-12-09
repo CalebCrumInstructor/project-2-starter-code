@@ -139,10 +139,10 @@ body {
 
 .display-image-1 {
     /* height: 100vh; */
-    /* background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Eerie_Background3_v4.png)!important; */
+    background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Eerie_Background3_v4.png)!important;
     /* background-position: 50%; */
-    /* background-repeat: no-repeat;
-    background-size: cover; */
+    background-repeat: no-repeat;
+    background-size: cover;
     /* overflow: hidden; */
 }
 
@@ -337,14 +337,46 @@ body {
     backdrop-filter: blur(2px);
 }
 
-.text-styling {
+.text-styling-v1 {
     font-family: var(--flavor-font);
     font-size: 36px;
     color: var(--primary-color);
+    text-shadow: #fff 1px 0px 10px;
     font-weight: bold;
     text-align: center;
     padding:  47px 0px 47px 0px;
     backdrop-filter: blur(2px);
+}
+
+.text-styling-v2 {
+    font-family: var(--primary-font);
+    font-size: 36px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    text-align: left;
+    backdrop-filter: blur(2px);
+}
+
+.text-styling-general {
+    font-family: var(--flavor-font);
+    font-size: 36px;
+    color: var(--primary-color);
+    text-shadow: #fff 1px 0px 10px;
+    font-weight: bold;
+    text-align: center;
+    padding:  70px 0px 70px 0px;
+    backdrop-filter: blur(2px);
+}
+
+.story-styling {
+    justify-content: center;
+    height: 100%;
+    width: 75%;
+    background-color: rgba(0, 0, 0, 0.5);    /* This is for opacity. */
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgb(58, 58, 58);
+    padding: 0px 15px 0px 15px;
+    margin: auto;
 }
 
 .position-absolute {
