@@ -144,6 +144,14 @@
     /* overflow: hidden; */
 }
 
+.display-image-3 {
+    background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Eerie_Background5_v1.png)!important;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+
 .card-image1 {
     background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Watery_Backdrop1_v1.png)!important;
     background-size: cover;
@@ -164,6 +172,18 @@
     background-size: cover;
     /* background-size: auto; */
     /* overflow: hidden; */
+}
+
+.card-image4 {
+    display: flex;
+    height: 100px;
+    width: 300px;
+    background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Eerie_Background5_v1.png)!important;    background-repeat: no-repeat;
+    background-position: 50%;
+    /* background-repeat: no-repeat; */
+    /* background-image: contain; */
+    background-size: cover;
+    /* margin-left: 200px; */
 }
 
 /* Fog Animation */
