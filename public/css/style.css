@@ -9,6 +9,16 @@
     --secondary-color: rgb(226, 226, 226);
 }
 
+body {
+    background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Eerie_Background3_v4.png)!important;
+    /* background-position: 50%; */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-blend-mode: difference;
+    /* overflow: hidden; */
+
+}
+
 .custom-font-pr {
     font-family: var(--primary-font)!important;
 }
@@ -113,10 +123,10 @@
 
 .display-image-1 {
     /* height: 100vh; */
-    background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Eerie_Background3_v4.png)!important;
+    /* background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Eerie_Background3_v4.png)!important; */
     /* background-position: 50%; */
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
     /* overflow: hidden; */
 }
 
@@ -174,6 +184,9 @@ body {
     background-color: rgba(50, 53, 54, 0.826);
     color: rgb(92, 97, 101);
     text-align: center;
+    border-radius: 10px;
+    margin-top: 10px !important;
+    margin-bottom: -10%;
 }
 
 .divExcerpt {
@@ -181,11 +194,24 @@ body {
     height: 100px;
     width: 95%;
     margin-left: 2.5%;
-    margin-top: 5%;
+    margin-right: 2.5%;
     background-color: rgba(50, 53, 54, 0.826);
     color: rgb(92, 97, 101);
-    text-align: center;
-    border-radius: ;
+    text-align: left;
+    border-radius: 10px;
+    margin-top: 10px !important;
+    /* margin-bottom: -5px !important; */
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+}
+
+.excerptText {
+    width: 90%;
+    margin-left: 5%;
+    font-size: small;
+    width: 200px;
+    height: 100px;
+    box-sizing:border-box;
 }
 
 /* .title-changes {
