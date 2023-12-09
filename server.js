@@ -7,6 +7,8 @@ const helpers = require('./utils/helpers');
 const uploads = require('./middleware/multer')
 const cloudinary = require('./config/cloudinaryConfig')
 
+const { Story_Image } = require('./models');
+
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
@@ -42,20 +44,17 @@ app.get('/', (req, res) => {
 });
 
 app.post('/api/photo', uploads.single('file'), async (req, res) => {
-  console.log('Ahhhhhhhhhhhhh')
-  console.log(req.file)
+
   try {
     const cloudImgData = await cloudinary.uploader.upload('./uploads/' + req.file.filename, {
       upload_preset: 'My Preset Here'
     })
 
-    const imgInfoObj = {
-      public_id: cloudImgData.public_id,
-      filename: cloudImgData.original_filename,
-      url: cloudImgData.url
-    }
-
-    console.log(imgInfoObj);
+    // create Story_Image
+    await Story_Image.create({
+      story_id: req.body.story_id,
+      attachment_url: cloudImgData.url
+    })
 
     res.sendStatus(200);
   } catch (err) {
