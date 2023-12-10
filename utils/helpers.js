@@ -11,7 +11,7 @@ module.exports = {
       //add a blank space to the end to keep the last word from being cutoff on strings that are less than the max length.
       var passedString = passedString + " ";
       // maximum number of characters to extract
-      var maxLength = 150;
+      var maxLength = 120;
       //trim the string to the maximum length
       var trimmedString = passedString.substr(0, maxLength);
 

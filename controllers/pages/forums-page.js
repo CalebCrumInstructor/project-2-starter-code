@@ -1,13 +1,15 @@
 const router = require('express').Router();
 const { Story } = require('../../models');
 const { User } = require('../../models');
+const { Sequelize } = require('sequelize');
 
 router.get('/', async (req, res) => {
   try {
       
     const data = await Story.findAll({
       include: User,
-      order: [ ['createdAt', 'DESC'] ],
+      limit: 5,
+      order: [ [Sequelize.fn('RAND'), 'DESC'] ],
     });
 
     const stories = data.map((story) => story.get({ plain: true }));
