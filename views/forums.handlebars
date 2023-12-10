@@ -59,15 +59,16 @@
         </div>
     </div>
     </div> --}}
-
-    <div class="eerieExcerptsCard"></div>
+<div class="forumsContainer">
+    <div class=""></div>
         {{#each stories}}
-            <div class="divExcerpt">
+            <div class="forumsCard">
                 <a href="/encounter/{{this.id}}">
-                    <p>{{this.title}}</p>
-                    <p>{{this.user.username}}</p>
-                    <p>{{trimString this.content}}</p>
+                    <p class="forumsCardText-1">{{this.title}}</p>
+                    <p class="forumsCardText-1">{{this.user.username}}</p>
+                    <p class="forumsCardText-2">{{trimString this.content}}</p>
                 </a>
             </div>
         {{/each}}
     </div>
+</div>
