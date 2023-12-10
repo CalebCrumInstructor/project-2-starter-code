@@ -60,55 +60,14 @@
     </div>
     </div> --}}
 
-    <div class="eerieExcerptsCard">
-        <div class="divExcerpt">
- Forum-Theories-Branch
-            <a><p class="excerptText">Scary story blah blah blah</p></a>
-        </div>
-
-        <div class="divExcerpt">
-            <a><p class="excerptText">Eerie tale take 2</p></a>
-        </div>
-
-        <div class="divExcerpt">
-            <a><p class="excerptText">Whew we're back at it with the eeks</p></a>
-        </div>
-
-        <div class="divExcerpt">
-            <a><p class="excerptText">Boogidy Woogidy !! </p></a>
-        </div>
-    
-        {{!-- <div class="divExcerpt">
-            <a><p class="excerptText">Surprise ! It's a ghoul.</p></a>
-        </div>
-
-        <div class="divExcerpt">
-            <a><p class="excerptText">jk you are safe</p></a>
-        </div>
-
-        <div class="divExcerpt">
-            <a><p class="BLURBText">ha - SIKE</p></a>
-        </div>
-
-        <div class="divExcerpt">
-            <a><p class="excerptText">Actually that sike was a sike.</p></a>
-        </div></div> --}}
-
-            <a><p>Scary story blah blah blah</p></a>
-        </div>
-    <div>
-    <a><p>Eerie tale take 2</p></a></div>
-    <div>
-    <a><p>Whew we're back at it with the eeks</p></a></div>
-    <div>
-    <a><p>Boogidy Woogidy !! </p></a></div>
-    <div>
-    <a><p>Surprise ! It's a ghoul.</p></a></div>
-    <div>
-    <a><p>jk you are safe</p></a></div>
-    <div>
-    <a><p>ha - SIKE</p></a></div>
-    <div>
-        <a><p>actually that sike was a sike</p></a>
-    </div></div>
- main
+    <div class="eerieExcerptsCard"></div>
+        {{#each stories}}
+            <div class="divExcerpt">
+                <a href="/encounter/{{this.id}}">
+                    <p>{{this.title}}</p>
+                    <p>{{this.user.username}}</p>
+                    <p>{{trimString this.content}}</p>
+                </a>
+            </div>
+        {{/each}}
+    </div>
