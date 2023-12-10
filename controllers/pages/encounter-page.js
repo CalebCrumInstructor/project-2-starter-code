@@ -1,10 +1,12 @@
 const router = require('express').Router();
 const { Story } = require('../../models');
+const { Story_Image } = require('../../models');
 
 // get all lore localhost/encounter
 router.get('/', async (req, res) => {
     try {
         const data = await Story.findAll({
+            include: Story_Image,
             order: [ ['createdAt', 'DESC']
           ],
         });
@@ -29,19 +31,27 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
     try {
         const data = await Story.findOne({
+            include: Story_Image,
             where: {
                 id: req.params.id
-            }
+            },
+            raw: true,
+            nest: true
         });
 
+        console.log(data.title)
+  console.log(data.story_images.attachment_url)      
         return res.render('encounter', 
         {
             //console.log(req.params.id),
             // query db for user stories based on userId in req.session
-            encounter: {
-                title: data.title,
-                content: data.content
-            }
+            // encounter: {
+            //     title: data.title,
+            //     content: data.content//,
+            //     //picture: data.story_images.attachment_url
+            // }
+
+            data
         });
     } catch (err) {
         res.status(500).json(err);
