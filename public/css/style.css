@@ -96,6 +96,20 @@ body {
     cursor: pointer;
 }
 
+.button-style-sm {
+    width: auto;
+    background: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56));
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    box-shadow: 3px 3px 3px rgb(88, 88, 88);
+    color: var(--primary-color);
+    display: inline-block;
+    line-height: 10px;
+    padding: 5px 15px;
+    text-align: center;
+    cursor: alias;
+}
+
 .btn-style {
     /* border: none; */
     width: auto;
@@ -377,6 +391,12 @@ html {
     height: 200px;
 }
 
+.picture-sizing {
+    margin: 0px 75px 38px 75px;
+    min-width: 350px;
+    height: 200px;
+}
+
 .card-flex{
     display: flex;
     flex-wrap: wrap;
@@ -413,6 +433,45 @@ html {
     font-weight: bold;
     text-align: left;
     backdrop-filter: blur(2px);
+}
+
+.text-styling-v3 {
+    font-family: var(--flavor-font);
+    font-size: 36px;
+    color: var(--primary-color);
+    text-shadow: #fff 1px 0px 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text-styling-v4 {
+    font-family: var(--primary-font);
+    font-size: 36px;
+    color: rgb(61, 61, 61);
+    font-weight: bold;
+    text-align: center;
+}
+
+.text-styling-v5 {
+    font-family: var(--primary-font);
+    font-size: 15px;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin: 8px 8px 8px 25px;
+    /* padding: 5px 15px; */
+    text-shadow: #fff 0px 0px 10px;
+    /* text-align: center; */
+}
+
+.text-styling-v6 {
+    font-family: var(--primary-font);
+    font-size: 15px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin: 8px 8px 8px 0px;
+    /* padding: 5px 15px; */
+    text-shadow: #000000 0px 0px 10px;
+    /* text-align: center; */
 }
 
 .text-styling-general {
