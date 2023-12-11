@@ -1,19 +1,54 @@
 <div class="row">
     <div class="">
+        <div class="is-flex is-justify-content-center">
             <h3 class="text-styling-main">Encounter</h3>
-        <div class="column is-full is-justify-content-center">
-            <h4 class="text-styling-v1">{{data.title}}</h4>
+        </div>
+        <div class="column is-full card-flex is-justify-content-center">
+            <div class="column is-full">
+                    <h4 class="text-styling-v3">{{data.title}}</h4>
+                {{!-- <h4 class="text-styling-v4">Upvotes: {{data.upvote}}</h4> --}}
+            </div>
+            {{!-- <div class="column is-full is-flex is-justify-content-center">
+                <button class='has-text-weight-bold btn-style custom-font-ot3 text-shadow' id='upvote'>Upvotes: {{data.upvote}}</button>
+            </div> --}}
             {{!-- Add the picture here... --}}
-            {{#each data.story_images}}
-            <image href="{{this.attachment_url}}"></image>
-            {{/each}}
+            {{!-- {{#each data.story_images}} --}}
+            <div class="card picture-sizing card-relative display-image-4"> {{!-- <img src="{{data.story_images.attachment_url}}"> --}}{{!-- <img src="{{this.attachment_url}}"> --}}
+                {{#if data.story_images.attachment_url}}
+                    <style scoped>
+                        .display-image-4 {
+                            background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url({{data.story_images.attachment_url}})!important;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+                    </style>
+                {{else}}
+                    <style scoped>
+                        .display-image-4 {
+                            background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Eerie_Background3_v4.png)!important;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+                    </style>
+                {{/if}}
+            </div>
+            {{!-- {{/each}} --}}
             <div class="story-styling">
                 <h6 class="text-styling-v2">{{data.content}}</h6>
-                <img src="{{data.story_images.attachment_url}}">
+                {{!-- <img src="{{data.story_images.attachment_url}}"> --}}
+                <div class="column is-full is-flex is-justify-content-center">
+                    <h6 class="text-styling-v5">Written by: {{data.user}}.</h6>
+                    {{!-- {{#if logged_in}} --}}
+                        <button class='has-text-weight-bold btn-style custom-font-ot3 text-shadow' id='upvote'>Upvote?</button>
+                    {{!-- {{/if}} --}}
+                    <h6 class="text-styling-v5">Current Upvotes:</h6><p class="text-styling-v6">{{data.upvote}}</p>
+
+                </div>
             </div>
         </div>
-            {{!-- {{data.upvote}} --}}
             {{!-- {{data.user}} --}}
     </div>
 
 </div>
+
+<script src="/js/encounter-upvote.js"></script>
