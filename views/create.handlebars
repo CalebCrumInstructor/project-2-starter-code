@@ -1,0 +1,32 @@
+{{!-- <h1>Create Page</h1> --}}
+<div>
+    <div class='column is-full is-flex is-justify-content-center'>
+        <div class='card px-5 pt-3 pb-1 card-image3'>
+
+            <form class="" id='create-new'>
+                <div class='column is-full is-flex is-justify-content-center'>
+                    <div class="">
+                        <label class="has-text-weight-bold custom-color-2 pr-2" for=''>Title:</label>
+                        <input class='mr-6' type='text' id='title' />
+                    </div>
+
+                    <div class="">
+                        <input class="ml-6 has-text-weight-bold custom-color-2 custom-font-ot3" id="photo-input-el" type="file" accept="image/png, image/jpeg" />
+                        {{!-- <button class="has-text-weight-bold btn-style-sm" id="upload-button">Upload</button> --}}
+
+                    </div>
+
+                </div>
+                <div class='column is-full is-flex is-justify-content-center'>
+                    <label class="has-text-weight-bold custom-color-2 pr-2" for=''>Story:</label>
+                    <textarea class='' type='password' id='story' rows="15" cols="200"></textarea>
+                </div>
+                    <div class='column is-full is-flex is-justify-content-center'>
+                    <button class='has-text-weight-bold btn-style' type='submit' id="story-button">Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src='/js/create-story.js'></script>

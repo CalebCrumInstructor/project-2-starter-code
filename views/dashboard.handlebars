@@ -1,1 +1,16 @@
-<h3>Dashboard Page</h3>
+    {{!-- <h3>Dashboard Page</h3> --}}
+<div class="column is-full is-flex is-justify-content-center">
+    <ul class="">
+        {{#each stories}}
+            <li>{{this.title}}</li>
+        {{/each}}
+    </ul>
+
+</div>
+<div class="column is-full is-flex is-justify-content-center">
+    <a href="/create">
+        <button class="has-text-weight-bold button-style custom-font-ot3 text-shadow" id="create">Create New Post</button>
+    </a>
+</div>
+
+<script src="/js/dashboard.js"></script>
