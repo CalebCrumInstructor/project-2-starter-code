@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="">
+            <h3 class="text-styling-main">Encounter</h3>
+        <div class="column is-full is-justify-content-center">
+            <h4 class="text-styling-v1">{{data.title}}</h4>
+            {{!-- Add the picture here... --}}
+            {{#each data.story_images}}
+            <image href="{{this.attachment_url}}"></image>
+            {{/each}}
+            <div class="story-styling">
+                <h6 class="text-styling-v2">{{data.content}}</h6>
+                <img src="{{data.story_images.attachment_url}}">
+            </div>
+        </div>
+            {{!-- {{data.upvote}} --}}
+            {{!-- {{data.user}} --}}
+    </div>
+
+</div>
