@@ -18,10 +18,10 @@ async function uploadImg(story_id) {
             });
         const data = await res.json();
         console.log(data);
+
     } catch(err) {
         console.log(err);
     }
-
 };
 
 const handleSubmit = async (event) => {
@@ -29,8 +29,8 @@ const handleSubmit = async (event) => {
 
     //The title and content are needed as parameters to create the story.
     const body = {
-        title: document.querySelector('#title').value,
-        content: document.querySelector('#story').value
+        title: $('#title').val(),
+        content: $('#story').val()
     };
 
     try {
@@ -49,6 +49,9 @@ const handleSubmit = async (event) => {
             // take story id and pass it to uploadImg
             uploadImg(story.id);
         }
+
+        //redirect to the encounters page to see the newly posted story
+        document.location.replace('/encounter/' + story.id);
     } catch(err) {
         console.log(err);
     }
