@@ -59,6 +59,7 @@
         </div>
     </div>
     </div> --}}
+<<<<<<< HEAD
 
     <div class="column is-full is-flex is-justify-content-center">
         <a href="/create">
@@ -125,3 +126,18 @@
                 [Encounter excerpt here...]</p></a>
         </div></div>
 main
+=======
+<div class="forumsContainer">
+    <div class=""></div>
+        {{#each stories}}
+            <div class="forumsCard">
+                <a href="/encounter/{{this.id}}">
+                    <p class="forumsCardText-1">{{this.title}}</p>
+                    <p class="forumsCardText-1">{{this.user.username}}</p>
+                    <p class="forumsCardText-2">{{trimString this.content}}</p>
+                </a>
+            </div>
+        {{/each}}
+    </div>
+</div>
+>>>>>>> 5efd026d2f61b1542f86947fe593390f51fe0d88

@@ -1,31 +1,36 @@
 const photoInputEl = document.querySelector('#photo-input-el');
 const submitStoryBtn = document.querySelector("#story-button");
 
-function uploadImg(story_id) {
-    const file = photoInputEl.files[0];
+async function uploadImg(story_id) {
+    try {
+        //Get the file selected to upload
+        const file = photoInputEl.files[0];
 
-    const formData = new FormData();
-    formData.append('file', file);
-    formData.append('story_id', story_id);
+        //Add the file and story id to the payload
+        const formData = new FormData();
+        formData.append('file', file);
+        formData.append('story_id', story_id);
 
-    fetch('/api/photo', {
-    method: 'POST',
-    body: formData
-    }).then((res) => {
-    return res.json();
-    }).then((data) => {
-    console.log(data);
-    }).catch((err) => {
-    console.log(err);
-    });
+        //Call the api that will upload the image and associate it to the story
+        const res = await fetch('/api/photo', {
+            method: 'POST',
+            body: formData
+            });
+        const data = await res.json();
+        console.log(data);
+
+    } catch(err) {
+        console.log(err);
+    }
 };
 
 const handleSubmit = async (event) => {
     event.preventDefault();
 
+    //The title and content are needed as parameters to create the story.
     const body = {
-        title: document.querySelector('#title').value,
-        content: document.querySelector('#story').value
+        title: $('#title').val(),
+        content: $('#story').val()
     };
 
     try {
@@ -39,19 +44,17 @@ const handleSubmit = async (event) => {
 
         const story = await storyData.json();
 
-        console.log(story);
+        //On run the upload if an image is selected
+        if (!photoInputEl.value == "") {
+            // take story id and pass it to uploadImg
+            uploadImg(story.id);
+        }
 
-        // take story id and pass it to uploadImg
-        uploadImg(story.id);
-
-
-
+        //redirect to the encounters page to see the newly posted story
+        document.location.replace('/encounter/' + story.id);
     } catch(err) {
         console.log(err);
     }
-
-
 };
-
 
 submitStoryBtn.addEventListener('click', handleSubmit);
