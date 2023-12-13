@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
     return res.render('forums', 
     {
       stories,
-      logged_in: true,
+      logged_in: req.session.logged_in,
     }); 
 
   } catch (err) {

@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
 
     res.render('profile', {
       ...userData,
-      logged_in: true
+      logged_in: req.session.logged_in
     });
   } catch (err) {
     res.status(500).json(err);
