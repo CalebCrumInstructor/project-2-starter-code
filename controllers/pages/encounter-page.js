@@ -18,7 +18,9 @@ router.get('/', async (req, res) => {
             encounter: {
                 title: data.title,
                 content: data.content
-            }
+            },
+            logged_in: req.session.logged_in
+
         });
     } catch (err) {
         res.status(500).json(err);
@@ -51,7 +53,9 @@ router.get('/:id', async (req, res) => {
             //     //picture: data.story_images.attachment_url
             // }
 
-            data
+            data,
+            logged_in: req.session.logged_in
+
         });
     } catch (err) {
         res.status(500).json(err);

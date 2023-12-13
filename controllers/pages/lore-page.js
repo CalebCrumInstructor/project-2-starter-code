@@ -12,7 +12,9 @@ router.get('/', async (req, res) => {
             //   }
             // });
 
-        res.render('lore');
+        res.render('lore', {
+            logged_in: req.session.logged_in
+        });
     } catch (err) {
         res.status(500).json(err);
     }
@@ -31,7 +33,7 @@ router.get('/:id', async (req, res) => {
             });
 
         res.render('lore', {
-
+            logged_in: req.session.logged_in
         });
     } catch (err) {
         res.status(500).json(err);
