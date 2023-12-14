@@ -1,4 +1,33 @@
-<h2>
-  Hello
-  {{first_name}}, this is your profile page. Please change me or remove me.
-</h2>
+<div> 
+    <h1 class="text-styling-v3">
+    Hello {{first_name}}!
+    </h1>
+</div>
+
+<div class="userBioCont">
+    <div class="text-styling-v3">
+        <label for="Biography">Bio:</label>
+            <div>
+                <textarea class="userBioCard" id="Bio" cols="100" rows="15">
+                Tell us about yourself...
+                </textarea>
+            <div>
+    </div>
+</div>
+
+<div class="column is-full is-flex is-justify-content-center">
+    <a href="/create">
+        <button class="has-text-weight-bold button-style custom-font-ot3 text-shadow" id="create">Create New Post</button>
+    </a>
+</div>
+<div class="">
+    <ul class="column is-full card-flex is-justify-content-center">
+        {{#each stories}}
+            <a href="/encounter/{{this.id}}">
+                <div class="card card-sizing card-relative display-image-3">
+                    <li class=" text-styling-general">{{this.title}}</li> {{!-- card px-5 pt-3 pb-1 card-relative card-image4 text-styling --}}
+                </div>
+            </a>
+        {{/each}}
+    </ul>
+</div>

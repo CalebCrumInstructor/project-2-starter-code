@@ -391,6 +391,30 @@ body {
     /* box-sizing:border-box; */
 }
 
+.userBioCont {
+    position: relative;
+    justify-content: center;
+    width: 75%;
+    border-radius: 10px;
+    margin-left: 13.5% !important;
+    padding-bottom: 10px;
+}
+
+.userBioCard {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    width: 50%;
+    background-color: rgba(50, 53, 54, 0.826);
+    color: white;
+    text-align: left;
+    border-radius: 10px;
+    margin: 10px !important;
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+}
+
 /* body,
 html {
     margin: 0;
@@ -490,6 +514,11 @@ html {
 
 .card-relative {
     position: relative;
+}
+
+.card-relative-2 {
+    position: relative;
+    height: 50px;
 }
 
 .text-styling-main {
