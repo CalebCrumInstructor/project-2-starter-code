@@ -42,7 +42,7 @@ router.get('/:id', async (req, res) => {
         });
 
         console.log(data.title)
-  console.log(data.story_images.attachment_url)      
+
         return res.render('encounter', 
         {
             //console.log(req.params.id),

@@ -8,7 +8,6 @@ router.post('/', async (req, res) => {
       ...req.body,
       user_id: req.session.user_id
     });
-    console.log(req.body);
 
     res.status(200).json(storyData);
   } catch (err) {

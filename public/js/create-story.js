@@ -17,7 +17,6 @@ async function uploadImg(story_id) {
             body: formData
             });
         const data = await res.json();
-        console.log(data);
 
     } catch(err) {
         console.log(err);
