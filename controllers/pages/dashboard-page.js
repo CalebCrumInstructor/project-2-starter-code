@@ -1,10 +1,12 @@
 const router = require('express').Router();
 const { Story } = require('../../models');
+const { Story_Image } = require('../../models');
 
 router.get('/', async (req, res) => {
   try {
     // query db for user stories based on userId in req.session
     const data = await Story.findAll({
+      include: Story_Image,
       where: {
         user_id: req.session.user_id
       }
@@ -12,9 +14,7 @@ router.get('/', async (req, res) => {
 
     // map over the data
     const stories = data.map((story) => story.get({ plain: true }));
-    console.log("stories ----", stories);
     // create a btn in handlebars
-
 
     res.render('dashboard', {
       stories,
