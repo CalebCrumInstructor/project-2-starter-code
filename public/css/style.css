@@ -25,8 +25,49 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     font-size: 40px;
     width: 100%;
+    display: inline-block;
+    font-size: 48px;
+    color:rgb(37, 37, 37);
 }
 
+.main-container {
+    z-index: 3;
+    position: relative;
+
+}
+
+.headerClass {
+    height: 96px;
+    width: 100%;
+}
+
+.pageTitle {
+    font-size: 48px;
+    margin-block-start: 67em;
+    /* margin-inline-end: 67em; */
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-style: oblique;
+    font-weight: bold;
+    color: #252525;
+    text-shadow: #fff 1px 1px 10px;
+    font-family: var(--flavor-font);
+}
+
+.ul {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+    /* width: 75%; */
+    display: inline-block;
+}
+
+.card-sizing {
+    margin: 0px 48px 38px 48px;
+    min-width: 350px;
+    height: 200px;
+}
 .custom-font-pr {
     font-family: var(--primary-font)!important;
 }
@@ -80,11 +121,11 @@ body {
 }
 
 .title-color {
-    color: var(--primary-color);
+    color: rgb(37, 37, 37);
 }
 
 .subtitle-color {
-    color: var(--primary-color);
+    color: rgb(37, 37, 37);
 }
 
 .button-style {
@@ -234,21 +275,6 @@ body {
     z-index: 0;
 }
 
-/* .eerieExcerptsCard {
-    position: relative;
-    height: 70%;
-    width: 50%;
-    margin-left: 25%;
-    background-color: rgba(50, 53, 54, 0.826);
-    color: #a9a9a9 !important;
-    text-align: center;
-    border-radius: 10px;
-    margin-top: 10px !important;
-    margin-bottom: -10%;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
 ::-webkit-scrollbar {
     width: 12px;
     height: 12px;
@@ -267,7 +293,6 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #999;  
 }
-} */
 
 /* .divExcerpt {
     position: relative;
@@ -488,17 +513,6 @@ html {
     background-size: contain;
     background-position: center;
     animation: marquee 150s linear infinite;
-}
-
-.main-container {
-    z-index: 3;
-    position: relative;
-}
-
-.card-sizing {
-    margin: 0px 48px 38px 48px;
-    min-width: 350px;
-    height: 200px;
 }
 
 .picture-sizing {
