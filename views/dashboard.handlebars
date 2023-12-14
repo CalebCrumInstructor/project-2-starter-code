@@ -10,6 +10,27 @@
         {{#each stories}}
             <a href="/encounter/{{this.id}}">
                 <div class="card card-sizing card-relative display-image-3">
+                    {{#if stories.story_images.attachment_url}}
+                        <style scoped>
+                            .display-image-3 {
+                                background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url({{stories.story_images.attachment_url}})!important;
+                                background-position: 50%;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                /* overflow: hidden; */
+                            }
+                        </style>
+                    {{else}}
+                        <style scoped>
+                            .display-image-3 {
+                                background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Eerie_Background5_v1.png)!important;
+                                background-position: 50%;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                /* overflow: hidden; */
+                            }
+                        </style>
+                    {{/if}}
                     <li class=" text-styling-general">{{this.title}}</li> {{!-- card px-5 pt-3 pb-1 card-relative card-image4 text-styling --}}
                 </div>
             </a>
