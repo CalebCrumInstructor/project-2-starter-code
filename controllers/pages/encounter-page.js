@@ -41,8 +41,6 @@ router.get('/:id', async (req, res) => {
             nest: true
         });
 
-        console.log(data.title)
-
         return res.render('encounter', 
         {
             //console.log(req.params.id),

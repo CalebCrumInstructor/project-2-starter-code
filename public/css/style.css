@@ -611,6 +611,21 @@ html {
     margin: auto;
 }
 
+.text-title-styling {
+    background-color: rgba(0, 0, 0, 0.5);    /* This is for opacity. */
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgb(58, 58, 58);
+    color: white;
+}
+
+.textarea-styling {
+    background-color: rgba(0, 0, 0, 0.5);    /* This is for opacity. */
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgb(58, 58, 58);
+    padding: 3px 5px 3px 5px;
+    color: white;
+}
+
 .position-absolute {
     position: absolute;
 }
