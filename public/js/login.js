@@ -46,6 +46,7 @@ const loginFormHandler = async (event) => {
       return;
     }
 
+    // console.log(req.session.username);
     document.location.replace('/dashboard');
   } catch (err) {
     console.log(err);

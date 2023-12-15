@@ -1,0 +1,659 @@
+:root {
+    --primary-font: 'Hedvig Letters Serif', serif;
+    --flavor-font: 'Smooch', cursive;
+    --secondary-font: 'Dhurjati', sans-serif;
+    --other-font-1: 'Unbounded', sans-serif;
+    --other-font-2: 'Splash', cursive;
+    --other-font-3: 'Space Mono', monospace;
+    --primary-color: rgb(37, 37, 37);
+    --secondary-color: rgb(226, 226, 226);
+}
+
+body {
+    background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Eerie_Background3_v4.png)!important; /* Add this back */
+    /* background-position: 50%; */
+    /* background-repeat: no-repeat; */
+    background-size: cover; /* Add this back */
+    background-blend-mode: difference; /* Add this back */
+    /* overflow: hidden; */
+
+}
+
+.theEeriePapers {
+    display: grid;
+    grid-template-rows: repeat (5, auto);
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 40px;
+    width: 100%;
+    display: inline-block;
+    font-size: 48px;
+    color:rgb(37, 37, 37);
+}
+
+.main-container {
+    z-index: 3;
+    position: relative;
+
+}
+
+.headerClass {
+    height: 96px;
+    width: 100%;
+}
+
+.pageTitle {
+    font-size: 48px;
+    margin-block-start: 67em;
+    /* margin-inline-end: 67em; */
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-style: oblique;
+    font-weight: bold;
+    color: #252525;
+    text-shadow: #fff 1px 1px 10px;
+    font-family: var(--flavor-font);
+}
+
+.ul {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+    /* width: 75%; */
+    display: inline-block;
+}
+
+.card-sizing {
+    margin: 0px 48px 38px 48px;
+    min-width: 350px;
+    height: 200px;
+}
+.custom-font-pr {
+    font-family: var(--primary-font)!important;
+}
+
+.custom-font-se {
+    font-family: var(--secondary-font)!important;
+}
+
+.custom-font-ot1 {
+    font-family: var(--other-font-1)!important;
+}
+
+.custom-font-ot2 {
+    font-family: var(--other-font-2)!important;
+}
+
+.custom-font-ot3 {
+    font-family: var(--other-font-3)!important;
+}
+
+.custom-font-fl {
+    font-family: var(--flavor-font)!important;
+}
+
+.custom-color-1 {
+    color: var(--primary-color)!important;
+}
+
+.custom-color-2 {
+    color: var(--secondary-color)!important;
+}
+
+.size-100 {
+    font-size: 100px!important;
+}
+
+.size-75 {
+    font-size: 75px!important;
+}
+
+.size-50 {
+    font-size: 50px!important;
+}
+
+.size-25 {
+    font-size: 25px!important;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 2px rgb(119, 119, 119), 2px 2px 2px rgb(23, 83, 41);
+}
+
+.title-color {
+    color: rgb(37, 37, 37);
+}
+
+.subtitle-color {
+    color: rgb(37, 37, 37);
+}
+
+.button-style {
+    /* border: none; */
+    width: auto;
+    background: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56));
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px rgb(88, 88, 88);
+    color: var(--primary-color);
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 16px 16px 16px 20px;
+    padding: 7px 19px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button-style-sm {
+    width: auto;
+    background: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56));
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    box-shadow: 3px 3px 3px rgb(88, 88, 88);
+    color: var(--primary-color);
+    display: inline-block;
+    line-height: 10px;
+    padding: 5px 15px;
+    text-align: center;
+    cursor: alias;
+}
+
+.btn-style {
+    /* border: none; */
+    width: auto;
+    background: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56));
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    box-shadow: 3px 3px 3px rgb(88, 88, 88);
+    color: var(--primary-color);
+    display: inline-block;
+    line-height: 10px;
+    margin: 8px 8px 8px 10px;
+    padding: 5px 15px;
+    text-align: center;
+    cursor: alias;
+}
+
+.btn-style-sm {
+    /* border: none; */
+    width: auto;
+    background: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56));
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    box-shadow: 3px 3px 3px rgb(88, 88, 88);
+    color: var(--primary-color);
+    display: inline-block;
+    line-height: 10px;
+    /* margin: 8px 8px 8px 10px; */
+    padding: 5px 15px;
+    text-align: center;
+    cursor: alias;
+}
+
+.homepage-image {
+    min-height: 100vh;
+    background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Eerie_Background1.png)!important;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+
+.display-image-1 {
+    /* height: 100vh; */
+    background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Eerie_Background3_v4.png)!important;
+    /* background-position: 50%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+
+.display-image-2 {
+    background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Eerie_Background4_v4.png)!important;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+
+.display-image-3 {
+    background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Eerie_Background5_v1.png)!important;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+
+.card-image1 {
+    background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Watery_Backdrop1_v1.png)!important;
+    background-size: cover;
+}
+
+.card-image2 {
+    background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Watery_Backdrop2_v1.png)!important;
+    background-size: cover;
+}
+
+.card-image3 {
+    height: 100%;
+    /* width: 100%; */
+    background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Eerie_Background2_v2.png)!important;    background-repeat: no-repeat;
+    background-position: 50%;
+    /* background-repeat: no-repeat; */
+    /* background-image: contain; */
+    background-size: cover;
+    /* background-size: auto; */
+    /* overflow: hidden; */
+}
+
+.card-image4 {
+    display: flex;
+    height: 100px;
+    width: 300px;
+    background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Eerie_Background5_v1.png)!important;    background-repeat: no-repeat;
+    background-position: 50%;
+    /* background-repeat: no-repeat; */
+    /* background-image: contain; */
+    background-size: cover;
+    /* margin-left: 200px; */
+}
+
+/* Fog Animation */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.absolute-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #ccc;  
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #999;  
+}
+
+/* .divExcerpt {
+    position: relative;
+    height: 100px;
+    width: 50%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    background-color: rgba(50, 53, 54, 0.826);
+    color: rgb(92, 97, 101);
+    text-align: left;
+    border-radius: 10px;
+    margin-top: 10px !important; */
+    /* margin-bottom: -5px !important; */
+    /* display: inline-block;
+    padding: 10px 10px 10px 10px;
+} */
+
+/* .excerptText {
+    width: 50%;
+    margin-left: 5%;
+    font-size: small;
+    width: 50px;
+    height: 25px;
+    box-sizing:border-box;
+} */
+
+.forumsContainer {
+    position: relative;
+    justify-content: center;
+
+    /* height: 90%; */
+    width: 50%;
+    background-color: rgba(50, 53, 54, 0.826);
+    border-radius: 10px;
+    margin-left: 25% !important;
+    /* margin-bottom: -10%; */
+    padding-bottom: 10px;
+}
+
+.forumsCard {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 95%; /* was 95% */
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    background-color: rgba(50, 53, 54, 0.826);
+    color: #a9a9a9 !important;
+    text-align: left;
+    border-radius: 10px;
+    margin-top: 10px !important;
+    /* margin-bottom: -5px !important; */
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.excerptText {
+    width: 90%;
+    margin-left: 5%;
+    font-size: small;
+    width: 200px;
+    height: 100px;
+    box-sizing:border-box;
+    text-decoration: none;
+    color: #a9a9a9 !important;
+}
+
+.eerieTheoryCard {
+    position: relative;
+    height: 300px;
+    width: 50%;
+    margin-left: 25%;
+    background-color: rgba(50, 53, 54, 0.826);
+    color: #a9a9a9;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px !important;
+    margin-bottom: -10%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.divTheory {
+    position: relative;
+    height: 100px;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    background-color: rgba(50, 53, 54, 0.826);
+    color: #a9a9a9;
+    text-align: left;
+    border-radius: 10px;
+    margin-top: 10px !important;
+    /* margin-bottom: -5px !important; */
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.theoryText {
+    width: 90%;
+    margin-left: 5%;
+    font-size: small;
+    width: 200px;
+    height: 100px;
+    box-sizing:border-box;
+    color: #a9a9a9;
+}
+
+.forumsCardText-1 {
+    text-align: center;
+    /* box-sizing:border-box; */
+}
+
+.forumsCardText-2 {
+    text-align: left;
+    /* box-sizing:border-box; */
+}
+
+.userBioCont {
+    position: relative;
+    justify-content: center;
+    width: 75%;
+    border-radius: 10px;
+    margin-left: 13.5% !important;
+    padding-bottom: 10px;
+}
+
+.userBioCard {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    width: 50%;
+    background-color: rgba(50, 53, 54, 0.826);
+    color: white;
+    text-align: left;
+    border-radius: 10px;
+    margin: 10px !important;
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+}
+
+/* body,
+html {
+    margin: 0;
+    padding: 0; */
+
+    /* Important styles begin */
+    /* background-image: radial-gradient(rgba(25, 0, 255, 0), rgb(25, 19, 56)), url(../assets/images/Eerie_Background3_v4.png);
+    background-size: cover;
+    background-attachment: fixed; */
+    /* Important styles end */
+/* } */
+
+/* .div1 {
+    margin: 40px;
+    color: white;
+} */
+
+/* .title-changes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+} */
+
+/* .title-changes > h1 {
+    color: #fff;
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+} */
+
+.fog {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+}
+
+.fog-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    z-index: 1;
+}
+
+.fog-img {
+    position: absolute;
+    height: 100vh;
+    width: 300vw;
+    z-index: 2;
+}
+
+.fog-img-1 {
+    background: url("../assets/videos/fog-1.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center;
+    animation: marquee 300s linear infinite;
+}
+
+.fog-img-2 {
+    background: url("../assets/videos/fog-2.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center;
+    animation: marquee 150s linear infinite;
+}
+
+.picture-sizing {
+    margin: 0px 75px 38px 75px;
+    min-width: 350px;
+    height: 200px;
+}
+
+.card-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-relative {
+    position: relative;
+}
+
+.card-relative-2 {
+    position: relative;
+    height: 50px;
+}
+
+.text-styling-main {
+    font-family: var(--primary-font);
+    font-size: 24px;
+    color: rgb(207, 200, 200);
+    font-weight: bold;
+    text-align: center;
+    backdrop-filter: blur(2px);
+}
+
+.text-styling-v1 {
+    font-family: var(--flavor-font);
+    font-size: 36px;
+    color: var(--primary-color);
+    text-shadow: #fff 1px 0px 10px;
+    font-weight: bold;
+    text-align: center;
+    padding:  47px 0px 47px 0px;
+    backdrop-filter: blur(2px);
+}
+
+.text-styling-v2 {
+    font-family: var(--primary-font);
+    font-size: 36px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    text-align: left;
+    backdrop-filter: blur(2px);
+}
+
+.text-styling-v3 {
+    font-family: var(--flavor-font);
+    font-size: 36px;
+    color: var(--primary-color);
+    text-shadow: #fff 1px 0px 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text-styling-v4 {
+    font-family: var(--primary-font);
+    font-size: 36px;
+    color: rgb(61, 61, 61);
+    font-weight: bold;
+    text-align: center;
+}
+
+.text-styling-v5 {
+    font-family: var(--primary-font);
+    font-size: 15px;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin: 8px 8px 8px 25px;
+    /* padding: 5px 15px; */
+    text-shadow: #fff 0px 0px 10px;
+    /* text-align: center; */
+}
+
+.text-styling-v6 {
+    font-family: var(--primary-font);
+    font-size: 15px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin: 8px 8px 8px 0px;
+    /* padding: 5px 15px; */
+    text-shadow: #000000 0px 0px 10px;
+    /* text-align: center; */
+}
+
+.text-styling-general {
+    font-family: var(--flavor-font);
+    font-size: 36px;
+    color: var(--primary-color);
+    text-shadow: #fff 1px 0px 10px;
+    font-weight: bold;
+    text-align: center;
+    padding:  70px 0px 70px 0px;
+    backdrop-filter: blur(2px);
+}
+
+.story-styling {
+    justify-content: center;
+    height: 100%;
+    width: 75%;
+    background-color: rgba(0, 0, 0, 0.5);    /* This is for opacity. */
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgb(58, 58, 58);
+    padding: 0px 15px 0px 15px;
+    margin: auto;
+}
+
+.text-title-styling {
+    background-color: rgba(0, 0, 0, 0.5);    /* This is for opacity. */
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgb(58, 58, 58);
+    color: white;
+}
+
+.textarea-styling {
+    background-color: rgba(0, 0, 0, 0.5);    /* This is for opacity. */
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgb(58, 58, 58);
+    padding: 3px 5px 3px 5px;
+    color: white;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-200vw, 0, 0);
+    }
+}
