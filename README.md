@@ -1,5 +1,5 @@
 # EeriePapers
-With this website, a user can insert a caption & description of supernatural / paranormal stories, along with a location pin, tags to direct viewers to that specific type of post, relevant media, and comment on a post. There is another section of this site to post descriptions and discuss theories.
+With this website, a user can create an account or login to their previously existing account where in which they can insert a caption & description of supernatural / paranormal stories, along with an image to depict their encounter / experience on their post. There is another section of this site called the Lore where a user can post descriptions and discuss theories.
 
 ## Description
 
